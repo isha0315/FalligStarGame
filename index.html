@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Catch The Stars</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- START SCREEN -->
+
+  <div
+    id="startScreen"
+    class="screen"
+  >
+
+    <h1 class="title">
+      CATCH THE STARS
+    </h1>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Enter Username"
+    >
+
+    <button id="startBtn">
+      START GAME
+    </button>
+
+  </div>
+
+  <!-- TOP UI -->
+
+  <div
+    id="gameUI"
+    class="top-ui hidden"
+  >
+
+    <div>
+      ⭐ Score:
+      <span id="score">0</span>
+    </div>
+
+    <div>
+      🎯 Target:
+      <span id="target">0</span>
+    </div>
+
+    <div>
+      ⏱ Time:
+      <span id="timer">0</span>
+    </div>
+
+    <div>
+      🏆 Level:
+      <span id="level">1</span>
+    </div>
+
+  </div>
+
+  <!-- LEVEL INFO -->
+
+  <div
+    id="levelInfo"
+    class="level-box hidden"
+  >
+
+    <h2 id="levelText">
+      LEVEL 1
+    </h2>
+
+    <p id="missionText">
+      Catch stars before time ends
+    </p>
+
+  </div>
+
+  <!-- GAME CANVAS -->
+
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- DESKTOP CONTROL INFO -->
+
+  <div class="controls-info">
+
+    🎮 Use
+    A / D
+    or
+    ← →
+    Keys To Move Basket
+
+  </div>
+
+  <!-- LEVEL COMPLETE -->
+
+  <div
+    id="levelComplete"
+    class="popup hidden"
+  >
+
+    <h1>
+      LEVEL COMPLETED 🎉
+    </h1>
+
+    <button id="nextLevelBtn">
+      NEXT LEVEL
+    </button>
+
+  </div>
+
+  <!-- GAME OVER -->
+
+  <div
+    id="gameOver"
+    class="popup hidden"
+  >
+
+    <h1>
+      GAME OVER
+    </h1>
+
+    <h2>
+      Final Score:
+      <span id="finalScore"></span>
+    </h2>
+
+    <!-- LEADERBOARD -->
+
+    <div id="leaderboard">
+
+      <h3>
+        🏆 Global Leaderboard
+      </h3>
+
+    </div>
+
+    <button onclick="restartGame()">
+
+      PLAY AGAIN
+
+    </button>
+
+  </div>
+
+  <!-- SCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
